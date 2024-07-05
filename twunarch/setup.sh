@@ -29,88 +29,88 @@ mkdir "$HOME"/my_env/s1/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s1/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env1 "$HOME"/my_env/s1/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s1/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s1/unarchive_s1.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s1/unarch_s1.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s2/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s2/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env2 "$HOME"/my_env/s2/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s2/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s2/unarchive_s2.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s2/unarch_s2.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s3/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s3/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env3 "$HOME"/my_env/s3/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s3/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s3/unarchive_s3.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s3/unarch_s3.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s4/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s4/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env4 "$HOME"/my_env/s4/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s4/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s4/unarchive_s4.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s4/unarch_s4.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s5/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s5/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env5 "$HOME"/my_env/s5/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s5/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s5/unarchive_s5.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s5/unarch_s5.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s6/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s6/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env6 "$HOME"/my_env/s6/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s6/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s6/unarchive_s6.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s6/unarch_s6.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s7/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s7/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env7 "$HOME"/my_env/s7/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s7/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s7/unarchive_s7.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s7/unarch_s7.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s8/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s8/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env8 "$HOME"/my_env/s8/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s8/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s8/unarchive_s8.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s8/unarch_s8.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s9/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s9/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env9 "$HOME"/my_env/s9/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s9/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s9/unarchive_s9.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s9/unarch_s9.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s10/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s10/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env10 "$HOME"/my_env/s10/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s10/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s10/unarchive_s10.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s10/unarch_s10.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s11/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s11/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env11 "$HOME"/my_env/s11/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s11/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s11/unarchive_s11.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s11/unarch_s11.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s12/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s12/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env12 "$HOME"/my_env/s12/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s12/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s12/unarchive_s12.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s12/unarch_s12.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s13/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s13/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env13 "$HOME"/my_env/s13/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s13/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s13/unarchive_s13.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s13/unarch_s13.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s14/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s14/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env14 "$HOME"/my_env/s14/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s14/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s14/unarchive_s14.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s14/unarch_s14.py & # Uncomment as required
 
 mkdir "$HOME"/my_env/s15/
 git clone https://github.com/laelgelc/tw_unarchiver.git "$HOME"/my_env/s15/ # Update the git repository link accordingly
 aws s3 cp s3://twunarch/env15 "$HOME"/my_env/s15/.env # Update each 'env<n>' file accordingly
 cd "$HOME"/my_env/s15/ || { printf "cd failed, exiting\n" >&2; return 1; }
-#nohup python -u "$HOME"/my_env/s15/unarchive_s15.py & # Uncomment as required
+#nohup python -u "$HOME"/my_env/s15/unarch_s15.py & # Uncomment as required
