@@ -123,11 +123,11 @@ for index, row in df.iterrows():
     else:
         print(f'Error: {input_file_path} is not a supported archive file.')
     # Iterate over the extracted files
+    timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print(timestamp, ': Extracting and transferring uncompressed files to S3 for ' + file_key)
     for root, dirs, files in os.walk(output_directory):
         for file in files:
             if file.endswith('.bz2'):
-                timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                print(timestamp, ': Extracting and transferring .bz2 files to S3 for ' + file_key)
                 # Uncompress each .bz2 file
                 with bz2.open(os.path.join(root, file), 'rb') as bz_file:
                     uncompressed_data = bz_file.read()
@@ -144,8 +144,6 @@ for index, row in df.iterrows():
                     timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     print(timestamp, ':', uncompressed_filename, 'transferred')
             elif file.endswith('.gz'):
-                timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                print(timestamp, ': Extracting and transferring .gz files to S3 for ' + file_key)
                 # Uncompress each .gz file
                 with gzip.open(os.path.join(root, file), 'rb') as gz_file:
                     uncompressed_data = gz_file.read()
