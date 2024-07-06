@@ -14,7 +14,7 @@
 #Server 1: 270 GB + 81 GB + 3 GB = 354 GB ~ 360 GB
 #- Unarchive instances 1: 270 GB
 #- Unarchive instances 2, 3 and 4: 3 * 27 GB = 81 GB
-#- Operating system: 3 GB'
+#- Operating system: 3 GB
 
 # Importing the required libraries
 from dotenv import load_dotenv
@@ -23,6 +23,7 @@ import pandas as pd
 import tarfile
 import zipfile
 import bz2
+import gzip
 import os
 import sys
 import shutil
@@ -133,6 +134,22 @@ for index, row in df.iterrows():
                     
                     # Remove the .bz2 extension from the filename
                     uncompressed_filename = file[:-4]
+                    
+                    # Get the relative path of the file within the directory tree
+                    relative_path = os.path.relpath(os.path.join(root, file), '.')
+                    
+                    # Upload the processed file to the destination S3 bucket with the same directory tree structure
+                    destination_key = os.path.join(relative_path, uncompressed_filename)
+                    s3.put_object(Body=uncompressed_data, Bucket=destination_bucket_name, Key=destination_key)
+                    timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    print(timestamp, ':', uncompressed_filename, 'transferred')
+            elif file.endswith('.gz'):
+                # Uncompress each .gz file
+                with gzip.open(os.path.join(root, file), 'rb') as gz_file:
+                    uncompressed_data = gz_file.read()
+                    
+                    # Remove the .gz extension from the filename
+                    uncompressed_filename = file[:-3]
                     
                     # Get the relative path of the file within the directory tree
                     relative_path = os.path.relpath(os.path.join(root, file), '.')
